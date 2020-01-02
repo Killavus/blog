@@ -4,33 +4,31 @@
     <meta charset="utf-8" />
     <title>My Code Place</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora|Merriweather|Montserrat|Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Lora|Source+Sans+Pro&display=swap" rel="stylesheet" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="blog-grid">
+    <div class="blog-container">
       <header class="blog-header">
         <h1><a href="/">My Code Place</a></h1>
-        <nav>
+        <nav class="main-nav">
           <ul>
-            <li><a href="#">Foo</a></li>
-            <li><a href="#">Bar</a></li>
-            <li><a href="#">Baz</a></li>
-            <li><a href="#">Quux</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Archive</a></li>
           </ul>
         </nav>
       </header>
       <section class="blog-content">
         <article>
           <header>
-            <aside>
-              <p class="date">2020-01-01</p>
-            </aside>
-            <h1>Hello World!</h1>
+            <h1>
+              <aside>
+                <p class="date">2020-01-01</p>
+              </aside>
+              Hello World!
+            </h1>
           </header>
           <h1 id="section-1">Introduction</h1>
           <p>
@@ -94,14 +92,14 @@
           <figure>
             <pre>
               <code>
-// Function to return  
-// gcd of a and b 
-int gcd(int a, int b) 
-{ 
-    if (a == 0) 
-        return b; 
-    return gcd(b % a, a); 
-} 
+// Function to return
+// gcd of a and b
+int gcd(int a, int b)
+{
+    if (a == 0)
+        return b;
+    return gcd(b % a, a)
+}
               </code>
             </pre>
             <figcaption>main.c</figcaption>
@@ -285,28 +283,29 @@ int gcd(int a, int b)
           </p>
         </article>
       </section>
-      <aside class="blog-secondary-info">
-        <div class="sticky-top-1em">
-          <section class="related-posts">
-            <h1>Related posts</h1>
-            <nav>
-              <ul>
-                <li><a href="#">Hello World pt. 2</a></li>
-                <li><a href="#">Hello World pt. 3</a></li>
-              </ul>
-            </nav>
-          </section>
-          <section class="most-popular">
-            <h1>Popular posts</h1>
-            <nav>
-              <ul>
-                <li><a href="#">Przepis na pierogi</a></li>
-                <li><a href="#">Super partia kurwo</a></li>
-                <li><a href="#">Mój pies Andrzej &ndash; przygoda życia</a></li>
-                <li><a href="#">Ruchanie psa jak sra</a></li>
-              </ul>
-            </nav>
-          </section>
+      <aside class="blog-secondary-content">
+          <div class="big-screen-sticky">
+            <section class="related-posts">
+              <h1>Related posts</h1>
+              <nav>
+                <ul>
+                  <li><a href="#">Hello World pt. 2</a></li>
+                  <li><a href="#">Hello World pt. 3</a></li>
+                </ul>
+              </nav>
+            </section>
+            <section class="popular-posts">
+              <h1>Popular posts</h1>
+              <nav>
+                <ul>
+                  <li><a href="#">Post One</a></li>
+                  <li><a href="#">Post Two</a></li>
+                  <li><a href="#">Super-lengthy post name because why not? Just testing stuff</a></li>
+                  <li><a href="#">Big post Big Post Post Big Big Big Big</a></li>
+                </ul>
+              </nav>
+            </section>
+          </div>
         </div>
       </aside>
     </div>
