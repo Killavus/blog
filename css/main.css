@@ -158,8 +158,8 @@ figure.float-right {
 blockquote {
   margin-top: 2em;
   margin-bottom: 2em;
-  border-top: 3px #D4DADE solid;
-  border-bottom: 3px #D4DADE solid;
+  border-top: 3px #cccccc solid;
+  border-bottom: 3px #cccccc solid;
 }
 
 blockquote > p {
@@ -253,6 +253,7 @@ figure.float-left figcaption {
 
   .blog-header h1 {
     font-size: 2.0025em;
+    margin-bottom: 0;
   }
 }
 
@@ -264,4 +265,45 @@ figure.float-left figcaption {
 .popular-posts ul {
   list-style: none;
   padding-left: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+
+  body {
+    background-color: #111;
+    color: #ddd;
+  }
+
+  a {
+    color: #5199FF;
+  }
+
+  a:hover, a:active, a:focus {
+    color: #B7D4FF;
+  }
+
+  a:visited {
+    color: #DDA0DD;
+  }
+
+  a:visited:hover, a:visited:active, a:visited:focus {
+    color: #D8BFD8;
+  }
+
+  blockquote {
+    border-top-color: #333333;
+    border-bottom-color: #333333;
+  }
+
+  pre {
+    border-color: #333333;
+  }
 }
